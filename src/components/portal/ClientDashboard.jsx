@@ -369,7 +369,7 @@ export const ClientDashboard = () => {
             {/* Quick Templates Helper */}
             <div className="mt-4 p-3 rounded-xl bg-azentio-950 border border-azentio-800 space-y-1.5 text-xs">
               <div className="text-slate-400 font-medium text-[11px]">
-                Quick evaluation presets (Simulate Hackathon Section 4 Requirements):
+                Quick evaluation presets (Simulate Enterprise Collective Learning Workflows):
               </div>
               <div className="flex flex-wrap gap-2">
                 <button

@@ -79,7 +79,7 @@ export const EmployeePlaygroundView = () => {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-xl font-bold text-white">Azentio AI Build Labs Internal Playground</h1>
+              <h1 className="text-xl font-bold text-white">Azentio AI Research & Model Playground</h1>
               <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">
                 R&D & MODEL EXPERIMENTATION
               </span>
@@ -206,14 +206,14 @@ export const EmployeePlaygroundView = () => {
                 placeholder="Broadcast subject..."
                 value={broadcastTitle}
                 onChange={(e) => setBroadcastTitle(e.target.value)}
-                className="w-full px-3 py-2 rounded-lg bg-azentio-950 border border-azentio-700 text-white outline-none focus:border-cyan-400"
+                className="w-full px-3 py-2 rounded-lg bg-azentio-950 border border-azentio-700 text-white placeholder-slate-500 outline-none focus:border-cyan-400"
               />
               <textarea
                 rows={2}
                 placeholder="Message content for all bank administrators..."
                 value={broadcastMsg}
                 onChange={(e) => setBroadcastMsg(e.target.value)}
-                className="w-full p-2.5 rounded-lg bg-azentio-950 border border-azentio-700 text-white outline-none focus:border-cyan-400"
+                className="w-full p-2.5 rounded-lg bg-azentio-950 border border-azentio-700 text-white placeholder-slate-500 outline-none focus:border-cyan-400"
               />
               <button
                 type="submit"

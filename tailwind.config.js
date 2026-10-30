@@ -8,6 +8,18 @@ export default {
     extend: {
       colors: {
         azentio: {
+          50: '#F0F5FF',
+          100: '#CCE0FF',
+          200: '#99C2FF',
+          300: '#66A3FF',
+          400: '#3385FF',
+          500: '#0066FF',
+          600: '#254694',
+          700: '#1E356D',
+          800: '#142347',
+          850: '#0E1A38',
+          900: '#0B132B',
+          950: '#070D1E',
           mint: '#2EE59D',       // Exact fluorescent mint-green from azentio.com
           mintHover: '#25CE8B',
           darkNavy: '#0E2633',   // Exact dark navy pill color
