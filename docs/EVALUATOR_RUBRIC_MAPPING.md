@@ -8,7 +8,7 @@ This matrix maps every specific requirement from the official notification and r
 | **Email: Special Challenge** | Build Azentio.ai Website & Intelligent Collaboration Portal | Dual platform: Public Marketing site + Authenticated Multi-Tenant Portal | `http://localhost:3000` |
 | **Email: Official Branding** | Align with Azentio visual identity (branding, design language) | Azentio Navy `#070D1E`, Azure `#0066FF`, Cyan `#00A3FF`, Emerald `#10B981` | `src/index.css`, `tailwind.config.js` |
 | **Email: Grand Finale Details** | Event details (31 Oct, 8:00 AM, Kadubeesanahalli, Bengaluru) | Embedded Grand Finale Hub with venue map & security form link | `src/components/public/HackathonHub.jsx` |
-| **Email: Team Attribution** | All team members must contribute | Attribution to Akshayaa S & Team, role divisions (Frontend, Backend, AI) | `src/components/public/HackathonHub.jsx`, `README.md` |
+| **Email: Team Attribution** | All team members must contribute | Attribution to Code Blooded, role divisions (Frontend, Backend, AI) | `src/components/public/HackathonHub.jsx`, `README.md` |
 | **Part A: Public Website** | Home, About Azentio, Products, Demos, Request a Demo | Hero with live metrics, Kastle, iMAL, Amlgo, Beyon360 showcases, Demo modal | `src/components/public/` |
 | **Part A: Product Playground** | Interactive demonstration of product capabilities | Live SME Seasonality Normalizer + Real-time PII Redaction simulator | `src/components/public/InteractiveSandbox.jsx` |
 | **Part B: User Roles (RBAC)** | Public, Employee, Client, Moderator, Product Owner, Admin | Top-level 1-click evaluation switcher bar covering all 7 personas | `src/components/common/Header.jsx`, `src/context/PortalContext.jsx` |

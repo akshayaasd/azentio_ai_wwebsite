@@ -3,7 +3,7 @@
 **Event**: Azentio.ai Build Labs 2026 Grand Finale  
 **Date & Time**: 31 October 2026, 8:00 AM IST  
 **Venue**: Azentio Office, Kadubeesanahalli, Bengaluru  
-**Presenter**: Akshayaa S & Team  
+**Presenter**: Code Blooded  
 
 ---
 

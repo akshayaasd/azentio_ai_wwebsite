@@ -1,6 +1,6 @@
 # Azentio.ai – Autonomous BFSI Intelligence & Collaboration Portal
 ### Azentio.ai Build Labs 2026 Grand Finale • Special Challenge Winner Solution (+10 Brownie Points)
-**Finalist Team:** Akshayaa S & Team  
+**Finalist Team:** Code Blooded  
 **Event Date:** 31 October 2026, 8:00 AM IST  
 **Venue:** Azentio Office, Kadubeesanahalli, Bengaluru  
 
@@ -120,4 +120,4 @@ D:\azentio.ai\
 - **Audit Traceability**: Every submission, redaction, approval, and rejected cross-tenant query generates an immutable audit record with timestamps, actors, and network signatures.
 
 ---
-*Good luck to Akshayaa S & Team at the Azentio.ai Build Labs Grand Finale!*
+*Good luck to Code Blooded at the Azentio.ai Build Labs Grand Finale!*
