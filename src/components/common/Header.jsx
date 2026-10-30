@@ -260,13 +260,6 @@ export const Header = () => {
                   Interactive Sandbox
                 </a>
                 <a
-                  href="#hackathon-hub"
-                  className="px-3 py-2 rounded-lg hover:text-white hover:bg-[#0D1836] transition flex items-center gap-1"
-                >
-                  <Award className="w-3.5 h-3.5 text-[#2EE59D]" />
-                  Build Labs Hub
-                </a>
-                <a
                   href="https://www.azentio.com/"
                   target="_blank"
                   rel="noreferrer"

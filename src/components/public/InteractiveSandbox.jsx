@@ -104,7 +104,7 @@ export const InteractiveSandbox = () => {
             Live Demonstration Sandbox
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Test the Core Hackathon Innovations
+            Experience Autonomous BFSI Innovations
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
             Experience the real business value: how Azentio AI solves the SME lending seasonality dilemma and safely redacts cross-tenant observations.

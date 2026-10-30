@@ -1,7 +1,7 @@
 /**
  * Azentio.ai Unified API Service
  * Communicates with FastAPI backend (http://127.0.0.1:8000)
- * with transparent fallback to local state for 100% offline hackathon pitch safety.
+ * with transparent fallback to local state for high-availability offline reliability.
  */
 
 const BACKEND_BASE_URL = 'http://127.0.0.1:8000';

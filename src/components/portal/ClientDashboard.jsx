@@ -50,7 +50,7 @@ export const ClientDashboard = () => {
   // Selected observation for deep modal inspect
   const [inspectObs, setInspectObs] = useState(null);
 
-  // Pre-fill quick templates based on hackathon problem statements
+  // Pre-fill quick templates based on BFSI problem statements
   const handleQuickTemplate = (type) => {
     if (type === 'seasonality') {
       setFormData({

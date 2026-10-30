@@ -106,7 +106,7 @@ export const ROLES = {
     id: 'employee',
     name: 'Priya Sharma',
     roleTitle: 'Senior AI Research Engineer',
-    organization: 'Azentio AI Build Labs',
+    organization: 'Azentio AI Innovation Labs',
     badge: 'Employee / R&D',
     color: 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30',
     description: 'Internal experimental playground, model evaluation metrics, synthetic data generator, and platform broadcasts.'
@@ -351,7 +351,7 @@ export const PRODUCTS_CATALOG = [
       'Human-in-the-Loop Moderator compliance workbench',
       'Direct linkage into Azentio Engineering Roadmap & sprint backlogs'
     ],
-    highlightBadge: 'Hackathon Innovation'
+    highlightBadge: 'Flagship Architecture'
   }
 ];
 

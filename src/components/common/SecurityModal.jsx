@@ -82,7 +82,7 @@ export const SecurityModal = () => {
         <div className="mt-4 space-y-2 text-xs text-slate-300">
           <div className="font-semibold text-slate-200 flex items-center gap-1.5">
             <Lock className="w-3.5 h-3.5 text-amber-400" />
-            Hackathon Multi-Tenant Compliance Guardrail:
+            Enterprise Multi-Tenant Compliance Guardrail:
           </div>
           <p className="text-slate-400 leading-relaxed text-[11px]">
             In strict compliance with Azentio’s BFSI data governance standards, individual client raw drafts, customer account numbers, and un-sanitized operational observations are cryptographically sequestered inside each tenant's private schema.
