@@ -37,25 +37,22 @@ export const Header = () => {
 
   return (
     <>
-      {/* Top Banner: Hackathon Grand Finale & Evaluator Switcher */}
+      {/* Top Banner: Enterprise Environment & Role Switcher */}
       <div className="bg-[#050B18] border-b border-[#142347] px-4 py-2 text-xs">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-slate-300">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2EE59D]/15 text-[#2EE59D] font-semibold border border-[#2EE59D]/30">
-              <Award className="w-3.5 h-3.5" /> Azentio.ai Build Labs 2026
+              <Shield className="w-3.5 h-3.5" /> Azentio Enterprise BFSI Cloud
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="hidden md:inline text-slate-300 font-medium">
-              Grand Finale Special Challenge: <strong className="text-white">10 Brownie Points Ready</strong>
-            </span>
-            <span className="text-[#2EE59D] bg-[#070D1E] px-2 py-0.5 rounded border border-[#172B57]">
-              Reporting: 31 Oct, 8:00 AM • Bengaluru
+              Autonomous Core Banking, Islamic Finance & AML Intelligence
             </span>
           </div>
 
-          {/* Quick Perspective Switcher for Judges */}
+          {/* Quick Perspective Switcher for Portal Demonstration */}
           <div className="flex items-center gap-2">
-            <span className="text-slate-400 hidden lg:inline">Evaluate Persona:</span>
+            <span className="text-slate-400 hidden lg:inline">Active Perspective:</span>
             <div className="relative">
               <button
                 onClick={() => setRoleDropdownOpen(!roleDropdownOpen)}

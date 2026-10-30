@@ -29,7 +29,7 @@ export const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A1329]/80 border border-[#172B57] shadow-inner backdrop-blur-md">
             <span className="flex h-2 w-2 rounded-full bg-[#00D084] animate-ping" />
             <span className="text-xs font-semibold text-[#00D084]">
-              Azentio.ai Build Labs 2026 • Grand Finale
+              Azentio Autonomous BFSI Suite
             </span>
             <span className="text-slate-600">•</span>
             <span className="text-xs text-slate-300 italic">

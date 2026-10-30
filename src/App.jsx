@@ -10,7 +10,6 @@ import { HeroSection } from './components/public/HeroSection';
 import { ProductsShowcase } from './components/public/ProductsShowcase';
 import { InteractiveSandbox } from './components/public/InteractiveSandbox';
 import { CollectiveExplainer } from './components/public/CollectiveExplainer';
-import { HackathonHub } from './components/public/HackathonHub';
 import { Footer } from './components/public/Footer';
 
 // Portal components
