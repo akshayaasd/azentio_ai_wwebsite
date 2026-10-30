@@ -6,10 +6,10 @@ export const DemoRequestModal = () => {
   const { demoModalOpen, setDemoModalOpen, showToast } = usePortal();
 
   const [formData, setFormData] = useState({
-    name: 'Akshayaa S',
-    email: 'akshayaa.evaluator@bfsi-partner.com',
-    institution: 'Azentio Partner Evaluation Bank',
-    role: 'Head of Digital Transformation',
+    name: 'Sarah Jenkins',
+    email: 's.jenkins@apexglobal.bank',
+    institution: 'Apex Global Financial Group',
+    role: 'Chief Technology Officer',
     assetSize: '$10B - $50B',
     selectedModules: ['Kastle Core Banking', 'AI Collective Intelligence', 'Amlgo Labs AML'],
     notes: 'Requesting demonstration of cross-tenant collective learning and seasonal SME lending normalizer.'

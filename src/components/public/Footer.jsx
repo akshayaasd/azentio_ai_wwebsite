@@ -48,13 +48,13 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Col 4: Hackathon Grand Finale */}
+          {/* Col 4: Enterprise Global Reach */}
           <div className="space-y-3">
-            <h4 className="text-white font-bold text-xs uppercase tracking-wider">Build Labs Grand Finale</h4>
+            <h4 className="text-white font-bold text-xs uppercase tracking-wider">Global BFSI Reach</h4>
             <div className="p-3 rounded-xl bg-[#070D1E] border border-[#172B57] space-y-2 text-[11px]">
-              <div className="text-white font-semibold">Special Challenge Evaluation</div>
-              <div className="text-[#2EE59D] font-bold">+10 Brownie Points Ready</div>
-              <div className="text-slate-400">Team: Akshayaa S & Team</div>
+              <div className="text-white font-semibold">Headquartered in Singapore</div>
+              <div className="text-[#2EE59D] font-bold">Serving 60+ Tier-1 Banks</div>
+              <div className="text-slate-400">Offices: Singapore • Bengaluru • Dubai • Riyadh • London</div>
               <a
                 href="https://www.azentio.com/"
                 target="_blank"
@@ -69,7 +69,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-[#142347] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div>
-            &copy; 2026 Azentio Software Private Limited. Built for Azentio.ai Build Labs 2026 Grand Finale.
+            &copy; 2026 Azentio Software Private Limited. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">

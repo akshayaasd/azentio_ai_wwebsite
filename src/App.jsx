@@ -33,7 +33,6 @@ const MainContent = () => {
           <ProductsShowcase />
           <InteractiveSandbox />
           <CollectiveExplainer />
-          <HackathonHub />
         </main>
         <Footer />
         <SecurityModal />

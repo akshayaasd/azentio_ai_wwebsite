@@ -60,11 +60,11 @@ export const PortalProvider = ({ children }) => {
   const [notifications, setNotifications] = useState([
     {
       id: 'notif-1',
-      title: 'Brownie Points Special Challenge Active',
-      message: 'Azentio.ai Build Labs Grand Finale evaluation portal is online.',
+      title: 'Azentio Collective Intelligence Active',
+      message: 'Multi-tenant federated intelligence telemetry and privacy pipelines are operational.',
       time: 'Just now',
       read: false,
-      type: 'challenge'
+      type: 'system'
     },
     {
       id: 'notif-2',
