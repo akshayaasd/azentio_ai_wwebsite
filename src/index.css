@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    background-color: #040814;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+}
+
+/* Azentio Official Brand Visual Identity: Signature Green & Deep Navy Slate */
+.azentio-arch {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.glass-panel {
+  background: rgba(10, 19, 41, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(23, 43, 87, 0.7);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(15, 29, 61, 0.9);
+  border-color: rgba(0, 208, 132, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(0, 208, 132, 0.25);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: rgba(7, 13, 30, 0.85);
+  border: 1px solid rgba(23, 43, 87, 0.9);
+  color: #F8FAFC;
+}
+
+.glass-input:focus {
+  border-color: #00D084;
+  box-shadow: 0 0 0 2px rgba(0, 208, 132, 0.25);
+  outline: none;
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #05DF72 0%, #00D084 50%, #0D9488 100%);
+}
+
+.gradient-text-green {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A7F3D0 40%, #00D084 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-green {
+  box-shadow: 0 0 25px rgba(0, 208, 132, 0.3);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040814;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #172B57;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00D084;
+}

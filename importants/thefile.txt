@@ -1,0 +1,291 @@
+Akshu, let me simplify the entire challenge. There are two things happening tomorrow, and I don't want your team to waste time building the wrong thing.
+
+# 1. What exactly is Azentio asking you to build?
+
+You have received a special challenge to build:
+
+Azentio.ai – Website & Intelligent Collaboration Portal
+
+The objective is to create a website for Azentio with a secure, AI-powered platform where employees and clients can collaborate, share market insights and help improve Azentio's products.
+
+10 Additional Brownie Points
+
+This is an additional challenge on top of your main hackathon problem statement. It gives your team an opportunity to earn 10 extra points.
+
+The notification establishes three conditions:
+
+- Every team member must contribute.
+- You must submit using the link and instructions that the organisers will share.
+- Azentio's evaluation team will review the solutions.
+
+# 2. What should your website actually contain?
+
+Think of this as one website with two major sections.
+
+PART A
+
+Public Azentio website
+
+[nexora. — SaaS Website Clean Modern Design by Egor Kozintsev on Dribbble](https://images.openai.com/static-rsc-4/ZKiY_uXfub0t7jS8uabD9l90WZiCiuIPHUEL4n_XInckAaDttPYrY-ZH3_7BPcHmlFlC5wGsbGgb-TTnfzG0uVQ9kwOBWjSqRaXcPPNy-sN2000F2e0T9hxjkGUF39V5Ji9A6infMW9BMMEBppKF8649rf6UE4ypYvsSLZidWfE?purpose=inline)
+
+[dribbble.com](https://dribbble.com/shots/25858743-nexora-SaaS-Website-Clean-Modern-Design?utm_source=chatgpt.com)
+
+Anyone can access this without logging in.
+
+- Home page
+- About Azentio
+- Products and solutions
+- Product demonstrations
+- Videos and media
+- Request a demo
+- Hackathon/event registration
+
+PART B
+
+Intelligent Collaboration Portal
+
+[CortexSync – Smart team collaboration with AI suggestions by Tapas Das for Design Veli  on Dribbble](https://images.openai.com/static-rsc-4/gVfJQdxcaJdwgOxnJMhruE7x1Bwr6b_Z5KdcOb7MFG2fq_2qcYyL7DW-f77Nv7IHpCFQeRg6UXbUotumQvw86QmzSn2-wA66VB3KeTbLyw42gm9F4zi46lRewNF9ta-kEiPtvx85oHb_rYwJDzCGm1Fa-o-uV9lz5Uzifnnvrz4?purpose=inline)
+
+[dribbble.com](https://dribbble.com/shots/26709115-CortexSync-Smart-team-collaboration-with-AI-suggestions?utm_source=chatgpt.com)
+
+Only authorised users can access this after login.
+
+It has different dashboards for employees, clients, moderators and administrators.
+
+# 3. Understand the different users
+
+This is a very important requirement. You cannot give everyone access to everything.
+
+| User          | What they should see                                  |
+| ------------- | ----------------------------------------------------- |
+| Public        | Website and product information                       |
+| Employee      | Internal Playground, experiments, broadcasts          |
+| Client        | Their own organisation's dashboard and entitled demos |
+| Moderator     | Submitted observations for review                     |
+| Product owner | Approved insights and improvement tracking            |
+| Admin         | User, organisation and permission management          |
+
+For example:
+
+A client from Bank A must never be able to access Bank B's private observations.
+
+Even if someone manually enters a URL, the backend must reject unauthorised access.&#x20;
+
+azentio.ai-Hackathon-Requirements.docx
+
+
+
+# 4. The most important feature: AI-powered collective learning
+
+This is where I would invest most of your technical effort.
+
+Imagine three fictional banks using Azentio.
+
+- Bank A observes that SME loan assessments struggle with seasonal income.
+- Bank B observes the same problem.
+- Bank C also reports similar challenges.
+
+Your platform should:
+
+1. Client submits an observation
+
+   A client enters a market observation, product gap or suggestion.
+2. AI analyses the observations
+
+   Use an LLM to identify similar problems, extract topics and cluster common themes.
+3. Moderator reviews the contributions
+
+   The moderator checks the content, removes identifying information and approves or rejects it.
+4. Approved insights become searchable
+
+   Authorised clients can explore shared observations and common market trends.
+5. Product owner creates an improvement idea
+
+   For example: "Add seasonality-aware comparison explanations to Financial Analysis Intelligence."
+6. Clients see improvement status
+
+   Proposed → Under review → Planned → In progress → Released.
+
+This is essentially the core business value of the platform.&#x20;
+
+azentio.ai-Hackathon-Requirements.docx
+
+azentio.ai-Hackathon-Requirements.docx
+
+
+
+# 5. What features should you implement?
+
+Don't try to implement every single requirement in the 12-page document. Build a working MVP that demonstrates the complete workflow.
+
+Here is the implementation priority I recommend.
+
+| Priority  | Feature                  | What to implement                    |
+| --------- | ------------------------ | ------------------------------------ |
+| Must have | Public website           | Home, products, about, demo enquiry  |
+| Must have | Login                    | Employee/client login                |
+| Must have | Role-based dashboards    | Different access for each role       |
+| Must have | Client workspace         | Organisation-specific dashboard      |
+| Must have | Observation submission   | Submit, save drafts and track status |
+| Must have | AI insight extraction    | Summarise and cluster observations   |
+| Must have | Moderator dashboard      | Approve, reject and redact           |
+| Must have | Collective learning feed | Display approved shared insights     |
+| Must have | Improvement tracker      | Track product improvement ideas      |
+| Important | Product Playground       | Synthetic product demonstrations     |
+| Important | Notifications            | Submission and approval status       |
+| Advanced  | Federated learning       | Separate client-side model training  |
+
+Important: Actual federated machine learning is optional (P2). Do not spend your hackathon time implementing it before the required collective learning workflow works.&#x20;
+
+azentio.ai-Hackathon-Requirements.docx
+
+
+
+# 6. How should you technically build this?
+
+Considering your team's Python and AI experience, I'd recommend this stack.
+
+## Suggested architecture
+
+Frontend – React + Vite + Tailwind CSS
+
+Public website • Employee portal • Client portal • Moderator portal
+
+Backend – FastAPI
+
+Authentication • RBAC • Tenant isolation • APIs • Business logic
+
+PostgreSQL
+
+Users, organisations, observations, permissions
+
+LLM service
+
+Extraction, summarisation, clustering
+
+Vector database
+
+Semantic search and retrieval
+
+Notification service
+
+In-app status updates
+
+You don't need LangGraph or multiple agents just for the sake of using agentic AI. A well-designed LLM pipeline is sufficient for the MVP.
+
+# 7. How should your team divide the work?
+
+For your three-member team, I suggest parallel development.
+
+| Person   | Responsibility  | Deliverables                                                  |
+| -------- | --------------- | ------------------------------------------------------------- |
+| Member 1 | Frontend        | Public website, login, dashboards                             |
+| Member 2 | Backend         | FastAPI, database, authentication, RBAC, APIs                 |
+| Member 3 | AI/Intelligence | LLM analysis, observation clustering, summarisation, insights |
+
+All three should integrate their work and participate in the final demonstration.
+
+# 8. Your actual hackathon execution plan
+
+Since the event is tomorrow, 31 October, you need to be strategic.
+
+## Build roadmap
+
+1. Phase 1 – Foundation
+
+   Create the React application, FastAPI backend and database. Set up the public website and login.
+2. Phase 2 – User experiences
+
+   Build employee, client and moderator dashboards. Implement role and organisation checks.
+3. Phase 3 – Core AI workflow
+
+   Implement observation submission, AI summarisation, similarity detection and moderator approval.
+4. Phase 4 – Collective learning
+
+   Create the approved insights feed and product improvement tracker.
+5. Phase 5 – Integration and demo
+
+   Connect frontend and backend, test permissions, prepare synthetic data and rehearse the demonstration.
+
+# 9. What should you demonstrate to the evaluators?
+
+This is the demo scenario I'd prepare.
+
+Recommended demo storyline
+
+1. Open the Azentio website and show the product catalogue.
+2. Log in as a client from Bank A.
+3. Submit an observation about SME loan assessment.
+4. Log in as a client from Bank B and submit a similar observation.
+5. Log in as the moderator and review both contributions.
+6. Approve de-identified versions.
+7. Show the AI-generated common theme in the collective learning dashboard.
+8. Log in as a product owner and create an improvement idea.
+9. Show the improvement status in the client portal.
+10. Attempt to access another organisation's private data and demonstrate that access is denied.
+
+This one demo showcases the website, authentication, multi-tenancy, AI, moderation, collective intelligence and security.
+
+The requirements explicitly expect synthetic data, at least three fictional client organisations for judging aggregation safeguards, and human moderation before shared publication.&#x20;
+
+azentio.ai-Hackathon-Requirements.docx
+
+
+
+# 10. What should you NOT waste time building?
+
+The requirements explicitly exclude these from the minimum scope:
+
+- Actual credit assessment products.
+- Actual financial reporting products.
+- Actual document-processing products.
+- Production customer-system integrations.
+- Billing.
+- Regulatory certification.
+- Deployment of client-trained models.
+
+Use synthetic data and sandbox demonstrations instead.&#x20;
+
+azentio.ai-Hackathon-Requirements.docx
+
+
+
+# My recommendation: Start with these three decisions
+
+Before writing code, I want your team to align on the implementation approach.
+
+1\. Frontend
+
+React + Vite + Tailwind
+
+Next.js
+
+2\. Backend
+
+FastAPI + PostgreSQL
+
+Supabase
+
+Other
+
+3\. AI model
+
+Free API / locally hosted model
+
+Gemini API
+
+Ollama local models
+
+4\. Deployment
+
+Free cloud hosting
+
+Local demo on laptop
+
+Existing VM
+
+Confirm our tech stack
+
+My advice: Build one complete end-to-end workflow rather than ten disconnected screens. A working client → AI → moderator → collective learning → product improvement journey will be much more compelling than a beautiful website with non-functional buttons.
+
+Let's build this strategically and target those additional 10 points.
