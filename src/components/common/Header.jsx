@@ -237,7 +237,7 @@ export const Header = () => {
               onClick={() => navigateTo('public')}
               className="flex items-center text-left group transition transform hover:opacity-95"
             >
-              <AzentioLogo variant="dark" showAi={true} />
+              <AzentioLogo variant="dark" height="h-8" />
             </button>
 
             {/* Public Navigation Links */}

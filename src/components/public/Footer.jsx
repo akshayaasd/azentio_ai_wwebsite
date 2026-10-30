@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Col 1: Brand & Exact Logo */}
           <div className="space-y-3">
-            <AzentioLogo variant="dark" showAi={true} />
+            <AzentioLogo variant="dark" height="h-7" />
             <p className="text-[11px] text-[#2EE59D] font-medium italic">
               "Purpose-built to shape tomorrow"
             </p>
